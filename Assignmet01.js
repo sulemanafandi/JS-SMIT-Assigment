@@ -16,16 +16,15 @@ alert('Wellcome to JS land...')
 // Question 6
 alert('Happy Coding !')
 
-// Qusetion 7
-let a  = 'hello i run js code run in console';
-alert(a);
+// Question 7
+let as  = 'hello i run js code run in console';
+alert(as);
 
-console.log(a);
+console.log(as);
 
 
-
-? chapter 02
-Qusetion 1
+// ? chapter 02
+// Question 1
 let username;
 console.log(username);
 
@@ -47,14 +46,14 @@ console.log(myBio);
 
 
 // Question 5
-let name= `Pizza
+let s= `Pizza
            Pizz
            Piz
            Pi
            P
 `;
-alert(name);
-console.log(name);
+alert(s );
+console.log(s );
 
 // Question 6
 let detail = 'My Email Address is ';
@@ -123,11 +122,11 @@ var lastName123;
 console.log(myName, _age, $salary, first_name, lastName123);
 
 // Illegal variable names
-var 1stName;
-var my-name;
-var @age;
-var first name;
-var lastName!;
+// var 1stName;
+// var my-name;
+// var @age;
+// var first name;
+// var lastName!;
 
 // Question 03
 document.write('<h1>Rules for naming JS variables</h1>');
