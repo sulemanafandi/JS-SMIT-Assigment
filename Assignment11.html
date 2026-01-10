@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Assignment 11 -->
+    <!-- Chapter 43-48   -->
+
+    <!-- Question 1 -->
+    <a href="#" onclick="alert('Link clicked!')">Click Me</a>
+
+    <!-- Question 2 -->
+    <img src="mobile1.jpg" alt="Mobile 1" onclick="alert('You clicked Mobile 1')" width="150">
+    <img src="mobile2.jpg" alt="Mobile 2" onclick="alert('You clicked Mobile 2')" width="150">
+    <img src="mobile3.jpg" alt="Mobile 3" onclick="alert('You clicked Mobile 3')" width="150">
+
+    <!-- Question 3 -->
+    <table border="1" id="studentTable">
+        <tr>
+            <th>Name</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>Mark</td>
+            <td><button onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td><button onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+    </table>
+
+    <!-- Question 4 -->
+    <img src="image1.jpg" id="myImage" onmouseover="this.src='image2.jpg'" onmouseout="this.src='image1.jpg'"
+        width="200">
+
+    <!-- Question 5 -->
+    <form name="counterForm">
+        <input type="text" name="counterValue" value="0" readonly>
+        <br>
+        <p id="counter">0</p>
+        <button onclick="increase()">Increase</button>
+        <button onclick="decrease()">Decrease</button>
+    </form>
+
+        <script>
+            function deleteRow(btn) {
+                var row = btn.parentNode.parentNode;
+                row.parentNode.removeChild(row);
+            }
+
+            let count = 0;
+
+            function increase() {
+                count++;
+                document.getElementById("counter").innerText = count;
+            }
+
+            function decrease() {
+                count--;
+                document.getElementById("counter").innerText = count;
+            }
+        </script>
+
+</body>
+
+</html>
