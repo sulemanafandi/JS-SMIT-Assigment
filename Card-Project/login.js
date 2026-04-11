@@ -17,6 +17,6 @@ login.addEventListener('submit', function (e) {
         error.innerHTML = ``;
         email.style.border = '1px solid green'
         password.style.border = '1px solid green'
-        window.location.href = 'Quiz.html'
+        window.location.href = 'card.html'
     }
 })
